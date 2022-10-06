@@ -3,7 +3,6 @@
 ///////////////////////////////////////
 const mongoose = require('./connection')
 const Car = require('./car')
-const Car = require('./car')
 
 // Here, we're going to set up a seed script
 // this will seed our database for us, so we have some starting resources

@@ -7,7 +7,7 @@ const express = require("express") // import express
 // we don't need this dependency anymore, because it lives in models/connection.js
 // const mongoose = require("mongoose") // import mongoose
 const path = require("path") // import path module
-// const CarRouter = require('./controllers/fruitControllers')
+const CarRouter = require('./controllers/fruitController')
 const UserRouter = require('./controllers/userController')
 const CarRouter = require('./controllers/carController')
 const middleware = require('./utils/middleware')
@@ -41,8 +41,9 @@ app.get("/", (req, res) => {
 // app.use, when we register a route, needs two arguments
 // the first, is the base url endpoint, the second is the file to use
 // app.use('/Cars', CarRouter)
-app.use('/users', UserRouter)
 app.use('/cars', CarRouter)
+app.use('/comments', CommentRouter)
+app.use('/users', UserRouter)
 
 /////////////////////////////////////////////
 // Server Listener

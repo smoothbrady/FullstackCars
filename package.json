@@ -1,0 +1,33 @@
+{
+  "name": "fullstackcars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "seed": "node models/seed.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smoothbrady/FullstackCars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smoothbrady/FullstackCars/issues"
+  },
+  "homepage": "https://github.com/smoothbrady/FullstackCars#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

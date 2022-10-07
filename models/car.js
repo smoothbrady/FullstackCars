@@ -17,7 +17,7 @@ const { Schema, model } = mongoose
 const carSchema = new Schema({
     name: String,
     color: String,
-    readyToEat: Boolean,
+    readyToDrive: Boolean,
     owner: {
         // here we can refer to an objectId
         // by declaring that as the type

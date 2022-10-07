@@ -73,7 +73,7 @@ router.delete('/delete/:carId/:commId', (req, res) => {
             }
         })
         // send a success if success
-        .then(fruit => {
+        .then(car => {
             res.sendStatus(204)
         })
         // send an error if error

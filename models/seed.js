@@ -11,7 +11,7 @@ const Car = require('./car')
 // router.get("/seed", (req, res) => {
 //     // array of starter cars
 
-//     // Delete every fruit in the db
+//     // Delete every car in the db
 //     Car.deleteMany({})
 //         .then(() => {
 //             // seed with the starter cars array
@@ -55,7 +55,7 @@ db.on('open', () => {
                     // always close connection to the db
                     db.close()
                 })
-        })
+            })
         .catch(error => {
             console.log(error)
             // always close connection to the db
